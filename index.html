@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VESTA — Tienda de Ropa</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="header__logo">VESTA</div>
+    <nav class="header__nav">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#como-comprar">Cómo comprar</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="header__cart-btn" id="cartToggle" aria-label="Abrir carrito">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+        <line x1="3" y1="6" x2="21" y2="6" stroke-linecap="round"/>
+        <path stroke-linecap="round" d="M16 10a4 4 0 0 1-8 0"/>
+      </svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Nueva colección</p>
+      <h1 class="hero__title">Ropa que<br/>te define.</h1>
+      <p class="hero__subtitle">Piezas cuidadas, estilo propio. Envíos a todo el país.</p>
+      <a href="#catalogo" class="btn btn--light">Ver catálogo</a>
+    </div>
+  </section>
+
+  <!-- ========== CÓMO COMPRAR ========== -->
+  <section class="how-to" id="como-comprar">
+    <h2 class="section-title">Cómo comprar</h2>
+    <div class="how-to__steps">
+      <div class="step">
+        <div class="step__number">01</div>
+        <h3>Elegí tu prenda</h3>
+        <p>Navegá el catálogo y agregá al carrito lo que más te guste.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">02</div>
+        <h3>Completá el formulario</h3>
+        <p>Ingresá tus datos y dirección de envío para coordinar la entrega.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">03</div>
+        <h3>Pagá por Nequi</h3>
+        <p>Transferí al número <strong>311 456 4706</strong> y envianos el comprobante por WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CATÁLOGO ========== -->
+  <section class="catalog" id="catalogo">
+    <h2 class="section-title">Catálogo</h2>
+    <div class="catalog__grid">
+
+      <!-- Producto 1 -->
+      <article class="product-card" data-id="1" data-name="Abrigo" data-price="60000">
+        <div class="product-card__image">
+          <img src="fotos/foto01.jpg" alt="Abrigo">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">Abrigo</h3>
+          <p class="product-card__price">$ 60.000</p>
+          <div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="S">S</button>
+    <button class="size-btn" data-size="M">M</button>
+    <button class="size-btn" data-size="L">L</button>
+  </div>
+</div>
+
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 2 -->
+      <article class="product-card" data-id="2" data-name="Chaqueta Pana Oversize" data-price="60000">
+        <div class="product-card__image">
+          <img src="fotos/foto02.jpg" alt="Chaqueta Pana Oversize">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">Chaqueta Pana Oversize</h3>
+          <p class="product-card__price">$ 60.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="L">L</button>
+    <button class="size-btn" data-size="XL">XL</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="product-card" data-id="3" data-name="Chamarra Cuerotex" data-price="80000">
+        <div class="product-card__image">
+          <img src="fotos/foto03.jpg" alt="Chamarra Cuerotex">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">Chamarra Cuerotex</h3>
+          <p class="product-card__price">$ 80.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="L">L</button>
+    <button class="size-btn" data-size="XL">XL</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 4 -->
+      <article class="product-card" data-id="4" data-name="SKINNY JEANS PEDRERIA" data-price="80000">
+        <div class="product-card__image">
+          <img src="fotos/foto04.jpg" alt="SKINNY JEANS PEDRERIA">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">SKINNY JEANS PEDRERIA</h3>
+          <p class="product-card__price">$ 80.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="8">8</button>
+    <button class="size-btn" data-size="10">10</button>
+    <button class="size-btn" data-size="12">12</button>
+    <button class="size-btn" data-size="14">14</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 5 -->
+      <article class="product-card" data-id="5" data-name="JEANS TENDENCIA PEDRERIA" data-price="80000">
+        <div class="product-card__image">
+          <img src="fotos/foto05.jpg" alt="JEANS TENDENCIA PEDRERIA">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">JEANS TENDENCIA PEDRERIA</h3>
+          <p class="product-card__price">$ 80.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="8">8</button>
+    <button class="size-btn" data-size="10">10</button>
+    <button class="size-btn" data-size="12">12</button>
+    <button class="size-btn" data-size="14">14</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 6 -->
+      <article class="product-card" data-id="6" data-name="JEANS TENDENCIA PEDRERIA" data-price="80000">
+        <div class="product-card__image">
+          <img src="fotos/foto06.jpg" alt="JEANS TENDENCIA PEDRERIA">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">JEANS TENDENCIA PEDRERIA</h3>
+          <p class="product-card__price">$ 80.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="8">8</button>
+    <button class="size-btn" data-size="10">10</button>
+    <button class="size-btn" data-size="12">12</button>
+    <button class="size-btn" data-size="14">14</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 7 -->
+      <article class="product-card" data-id="7" data-name="JEANS TENDENCIA" data-price="75000">
+        <div class="product-card__image">
+          <img src="fotos/foto07.jpg" alt="JEANS TENDENCIA">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">JEANS TENDENCIA</h3>
+          <p class="product-card__price">$ 75.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="8">8</button>
+    <button class="size-btn" data-size="10">10</button>
+    <button class="size-btn" data-size="12">12</button>
+    <button class="size-btn" data-size="14">14</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 8 -->
+      <article class="product-card" data-id="8" data-name="JEANS CARGO" data-price="100000">
+        <div class="product-card__image">
+          <img src="fotos/foto08.jpg" alt="JEANS CARGO">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">JEANS CARGO</h3>
+          <p class="product-card__price">$ 100.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="8">8</button>
+    <button class="size-btn" data-size="10">10</button>
+    <button class="size-btn" data-size="12">12</button>
+    <button class="size-btn" data-size="14">14</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 9 -->
+      <article class="product-card" data-id="9" data-name="BERMUDA JEAN TENDENCIA" data-price="70000">
+        <div class="product-card__image">
+          <img src="fotos/foto09.jpg" alt="BERMUDA JEAN TENDENCIA">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">BERMUDA JEAN TENDENCIA</h3>
+          <p class="product-card__price">$ 70.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="8">8</button>
+    <button class="size-btn" data-size="10">10</button>
+    <button class="size-btn" data-size="12">12</button>
+    <button class="size-btn" data-size="14">14</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 10 -->
+      <article class="product-card" data-id="10" data-name="CONJUNTO GABARDINA" data-price="80000">
+        <div class="product-card__image">
+          <img src="fotos/foto010.jpg" alt="CONJUNTO GABARDINA">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">CONJUNTO GABARDINA</h3>
+          <p class="product-card__price">$ 80.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="S">S</button>
+    <button class="size-btn" data-size="M">M</button>
+    <button class="size-btn" data-size="L">L</button>
+    <button class="size-btn" data-size="XL">XL</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 11 -->
+      <article class="product-card" data-id="11" data-name="CONJUNTO DOS PIEZAS" data-price="47000">
+        <div class="product-card__image">
+          <img src="fotos/foto011.jpg" alt="CONJUNTO DOS PIEZAS">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">CONJUNTO DOS PIEZAS</h3>
+          <p class="product-card__price">$ 47.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="S">S</button>
+    <button class="size-btn" data-size="M">M</button>
+    <button class="size-btn" data-size="L">L</button>
+    <button class="size-btn" data-size="XL">XL</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 12 -->
+      <article class="product-card" data-id="12" data-name="VESTIDO ENCANTO" data-price="40000">
+        <div class="product-card__image">
+          <img src="fotos/foto012.jpg" alt="VESTIDO ENCANTO">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">VESTIDO ENCANTO</h3>
+          <p class="product-card__price">$ 40.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="Talla Única">Talla Única</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- Producto 13 -->
+      <article class="product-card" data-id="13" data-name="OVEROL CARGO" data-price="50000">
+        <div class="product-card__image">
+          <img src="fotos/foto013.jpg" alt="OVEROL CARGO">
+        </div>
+        <div class="product-card__info">
+          <h3 class="product-card__name">OVEROL CARGO</h3>
+          <p class="product-card__price">$ 50.000</p>
+<div class="size-selector">
+  <p class="size-label">Talle:</p>
+  <div class="size-options">
+    <button class="size-btn" data-size="S-M">S-M</button>
+    <button class="size-btn" data-size="M-L">M-L</button>
+    <button class="size-btn" data-size="L-XL">L-XL</button>
+  </div>
+</div>
+<button class="btn btn--dark add-to-cart">Agregar al carrito</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ========== CARRITO LATERAL (SIDEBAR) ========== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-sidebar__header">
+      <h2>Tu carrito</h2>
+      <button class="cart-sidebar__close" id="cartClose" aria-label="Cerrar carrito">&times;</button>
+    </div>
+
+    <div class="cart-sidebar__items" id="cartItems">
+      <p class="cart-empty">Tu carrito está vacío.</p>
+    </div>
+
+    <div class="cart-sidebar__footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$ 0</span>
+      </div>
+      <button class="btn btn--dark btn--full" id="checkoutBtn" disabled>Finalizar compra</button>
+    </div>
+  </aside>
+
+  <!-- ========== MODAL DE CHECKOUT ========== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="checkoutModal">
+      <button class="modal__close" id="modalClose" aria-label="Cerrar">&times;</button>
+      <h2 class="modal__title">Completá tu pedido</h2>
+
+      <form id="checkoutForm" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" placeholder="Ej: María González" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="tu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="telefono">WhatsApp *</label>
+          <input type="tel" id="telefono" placeholder="Ej: 3114000000" required />
+        </div>
+        <div class="form-group">
+          <label for="direccion">Dirección de envío *</label>
+          <input type="text" id="direccion" placeholder="Calle, número, ciudad" required />
+        </div>
+        <div class="form-group">
+          <label for="notas">Notas adicionales (opcional)</label>
+          <textarea id="notas" placeholder="Talle, color, aclaraciones..." rows="3"></textarea>
+        </div>
+
+        <div class="payment-info">
+          <h3>💳 Cómo pagar</h3>
+          <p>Transferí el total a Nequi al número:</p>
+          <p class="nequi-number">311 456 4706</p>
+          <p class="payment-note">Una vez que hagas clic en "Enviar pedido", te contactamos por WhatsApp para confirmar el pago y coordinar el envío.</p>
+        </div>
+
+        <div class="modal__total">
+          <span>Total a pagar:</span>
+          <span id="modalTotal">$ 0</span>
+        </div>
+
+        <button type="submit" class="btn btn--dark btn--full">Enviar pedido por WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="contacto">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__logo">VESTA</p>
+        <p>Ropa que te define.<br/>Envíos a todo el país.</p>
+      </div>
+      <div class="footer__contact">
+        <h4>Contacto</h4>
+        <p>📱 WhatsApp: <a href="https://wa.me/573151123003" target="_blank">315 112 3003
+        </a></p>
+        <p>📧 ventas@vesta.com</p>
+        <p>📍 Colombia</p>
+      </div>
+      <div class="footer__payment">
+        <h4>Medios de pago</h4>
+        <p>✅ Nequi</p>
+        <p>✅ Transferencia bancaria</p>
+        <p>✅ Daviplata</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 VESTA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== BOTÓN FLOTANTE WHATSAPP ========== -->
+  <a href="https://wa.me/573151123002?text=Hola!%20Quiero%20consultar%20sobre%20un%20producto." 
+     class="whatsapp-btn" 
+     target="_blank" 
+     aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="white">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.837.742 5.5 2.036 7.82L0 32l8.388-2.001A15.94 15.94 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0Zm8.27 22.1c-.344.97-1.697 1.776-2.788 2.01-.744.157-1.714.283-4.98-1.07-4.18-1.714-6.874-5.96-7.082-6.233-.198-.274-1.665-2.213-1.665-4.222 0-2.01 1.052-2.993 1.426-3.404.344-.38.747-.474.997-.474.247 0 .494.002.71.013.228.012.534-.087.835.637.315.752 1.07 2.603 1.162 2.792.092.19.153.41.03.663-.12.25-.18.405-.356.624-.18.218-.377.488-.537.655-.18.186-.367.386-.158.755.21.368.932 1.535 2.001 2.487 1.375 1.224 2.534 1.603 2.902 1.782.368.18.583.153.798-.092.216-.246.924-1.077 1.17-1.446.246-.368.493-.307.83-.184.337.122 2.141 1.01 2.509 1.194.368.184.614.275.704.428.09.153.09.885-.254 1.854Z"/>
+    </svg>
+  </a>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
